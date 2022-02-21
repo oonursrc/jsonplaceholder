@@ -17,6 +17,6 @@ jobs:
             . venv/bin/activate
             python3 -m pytest tests/step_defs/steps.py --junitxml=test-reports/report.xml
       - store_test_results:
-          path: test-reports
+          path: test-reports/
       - store_artifacts:
           path: test-reports/
